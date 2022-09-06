@@ -223,13 +223,13 @@ p.job{
 div.job{
 	/* border-top: 1px solid #ccc; */
 	
-	color: #fff;
+	/* color: #fff; */
 	padding: 10px 0 !important;
 	margin-top: 10px;
 	position: relative;
 	z-index: 1;
 }
-div.job:after{
+/* div.job:after{
 	content:"";
 	position: absolute;
 	top: 0;
@@ -241,7 +241,7 @@ div.job:after{
 	background: #1488ca;
 	/* opacity: 0.5; */
 	z-index: -1;
-}
+} */
 .bb{
 	border-bottom: 1px solid #ccc;
 }
