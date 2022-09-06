@@ -12,12 +12,14 @@ body {
     font-family: roboto, sans-serif;
     font-size: 13px;
     line-height: 1.4;
+	
     
 }
 .page {
     width: 210mm;
     /* height: 297mm; */
     background-color: #fff;
+	 overflow: hidden;
 }
 /*
 @media print {
@@ -56,17 +58,17 @@ h3 {
     font-weight: bold;
     margin-top: 2px;
 }
-blockquote{
+.blockquote{
 	font-size: 14px;
 	line-height: 1.2;
 	text-align: justify;
 	font-style: italic;
 	margin: 0 0 20px 0;
-	padding: 20px 40px;
+	padding:  15px;
 	z-index: 2;
 	position: relative;
 }
-blockquote:before{
+/* .blockquote:before{
 	content:"";
 	width: 100%;
 	height: 100%;
@@ -76,24 +78,27 @@ blockquote:before{
 	top: 0;
 	z-index: -1;
 	left: 0;
-}
-q{
+} */
+.blockquote p{
 	padding-bottom: 19px;
+	margin-bottom: 0;
 	display: block;
 }
 .text-right{
 	display: block;
 	text-align: right;
 }
-
+.mb-0{
+	margin-bottom: 0 !important;
+}
 .side {
     background-color: #0b486b;
+    /* background-color: #1488ca; */
     color: #fff;
-    
     font-size: 13px;
     line-height: 1.54;
     text-align: center;
-    padding: 37px 35px 10px;
+    padding: 10px 20px;
 }
 
 .side a, .side a:visited {
@@ -139,7 +144,7 @@ q{
 
 .main {
     color: #545454;
-    padding: 20px 75px 20px 75px;
+    padding: 20px 30px;
 }
 
 .main .section-title {
@@ -191,10 +196,52 @@ q{
     /* font-size: 11px; */
 }
 .page2 .main {
-    padding-top: 40px;
-
+    padding-top: 0;
+	padding-bottom: 10px;
 }
 
 .clear {
     clear: both;
+}
+.first p{
+	padding-bottom: 19px;
+}
+.job{
+	padding-bottom: 0 !important;
+}
+.job p{
+	padding-bottom: 10px;
+}
+.title{
+	font-size: 15px !important;
+	font-style: italic;
+}
+p.job{
+	/* color: #000; */
+	font-weight: bold;
+}
+div.job{
+	/* border-top: 1px solid #ccc; */
+	
+	color: #fff;
+	padding: 10px 0 !important;
+	margin-top: 10px;
+	position: relative;
+	z-index: 1;
+}
+div.job:after{
+	content:"";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	transform:translateX(-50%);
+	width: 99999px;
+	height: 100%;
+	background: #1488ca;
+	/* opacity: 0.5; */
+	z-index: -1;
+}
+.bb{
+	border-bottom: 1px solid #ccc;
 }
